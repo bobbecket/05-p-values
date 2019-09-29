@@ -13124,13 +13124,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
 
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
 
 <span class="n">GroupA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">80.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
 <span class="n">GroupB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">80.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
@@ -13151,7 +13151,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">GroupA</span><span class="p">,</span> <span class="n">GroupB</span><span class="p">)</span>
@@ -13167,13 +13167,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[166]:</div>
+    <div class="prompt output_prompt">Out[83]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Ttest_indResult(statistic=-2.1006829688864586, pvalue=0.03568129225829572)</pre>
+<pre>Ttest_indResult(statistic=1.3001184510115371, pvalue=0.19357535870463102)</pre>
 </div>
 
 </div>
@@ -13194,7 +13194,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">GroupB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">90.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
@@ -13212,13 +13212,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[167]:</div>
+    <div class="prompt output_prompt">Out[84]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Ttest_indResult(statistic=-143.40504093834417, pvalue=0.0)</pre>
+<pre>Ttest_indResult(statistic=-141.04838120829683, pvalue=0.0)</pre>
 </div>
 
 </div>
@@ -13240,7 +13240,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[168]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">GroupB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">81</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
@@ -13258,13 +13258,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[168]:</div>
+    <div class="prompt output_prompt">Out[85]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Ttest_indResult(statistic=-15.330786385308228, pvalue=9.503703992265122e-53)</pre>
+<pre>Ttest_indResult(statistic=-12.324248209691296, pvalue=8.969336014168179e-35)</pre>
 </div>
 
 </div>
@@ -13277,17 +13277,17 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Definitely significant!</p>
-<p>How about 80.04?</p>
+<p>How about 80.15?</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[169]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">GroupB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">80.04</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">GroupB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">80.15</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
 
 <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">GroupA</span><span class="p">,</span> <span class="n">GroupB</span><span class="p">)</span>
 </pre></div>
@@ -13302,13 +13302,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[169]:</div>
+    <div class="prompt output_prompt">Out[86]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Ttest_indResult(statistic=-1.6093623533010133, pvalue=0.10755291633999715)</pre>
+<pre>Ttest_indResult(statistic=-1.2642503236787637, pvalue=0.2061549282474248)</pre>
 </div>
 
 </div>
@@ -13321,17 +13321,17 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Hmmm... Not quite significant enough.</p>
-<p>Let's try 80.05.</p>
+<p>Let's try 80.25.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[170]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">GroupB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">80.05</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">GroupB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">80.25</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
 
 <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">GroupA</span><span class="p">,</span> <span class="n">GroupB</span><span class="p">)</span>
 </pre></div>
@@ -13346,13 +13346,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[170]:</div>
+    <div class="prompt output_prompt">Out[87]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Ttest_indResult(statistic=-2.3964267322383854, pvalue=0.016564929367500408)</pre>
+<pre>Ttest_indResult(statistic=-2.0766364745983483, pvalue=0.03784786265763458)</pre>
 </div>
 
 </div>
@@ -13364,7 +13364,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This p-value meets our criteria of "significant at 0.05 or less", so we can say with confidence that as the mean value of GroupB starts heading above 80.05, the difference between GroupB and GroupA becomes statistically significant.</p>
+<p>This p-value meets our criteria of "significant at 0.05 or less", so we can say with confidence that as the mean value of GroupB starts heading above 80.25, the difference between GroupB and GroupA becomes statistically significant.</p>
 
 </div>
 </div>
